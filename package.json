@@ -3,11 +3,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vp dev",
+    "build": "vp build",
+    "preview": "vp preview"
   },
-  "dependencies": {
+  "devDependencies": {
     "@cloudflare/vite-plugin": "^1.25.0",
     "@vitejs/plugin-rsc": "^0.5.19",
     "ms": "3.0.0-canary.1",
@@ -15,8 +15,15 @@
     "react-dom": "^19.2.4",
     "server-only": "^0.0.1",
     "vinext": "^0.0.10",
-    "vite": "^7.3.1",
-    "wrangler": "^4.65.0"
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "wrangler": "^4.65.0",
+    "vite-plus": "latest"
   },
-  "packageManager": "npm@11.11.0"
+  "packageManager": "pnpm@10.30.2",
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+      "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
+    }
+  }
 }
