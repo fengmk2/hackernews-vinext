@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "devDependencies": {
     "@cloudflare/vite-plugin": "^1.25.0",
     "@vitejs/plugin-rsc": "^0.5.19",
     "ms": "3.0.0-canary.1",
