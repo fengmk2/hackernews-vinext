@@ -5,7 +5,7 @@ A [Hacker News](https://news.ycombinator.com/) clone built with [React Server Co
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (v18 or later)
-- npm (comes with Node.js)
+- [pnpm](https://pnpm.io/) (install via `corepack enable pnpm`)
 - A [Cloudflare account](https://dash.cloudflare.com/sign-up) (for deployment)
 
 ## Getting Started
@@ -13,13 +13,13 @@ A [Hacker News](https://news.ycombinator.com/) clone built with [React Server Co
 Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 Start the development server:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 The app will be available at `http://localhost:5173`.
@@ -27,13 +27,13 @@ The app will be available at `http://localhost:5173`.
 ## Building for Production
 
 ```bash
-npm run build
+pnpm build
 ```
 
 Preview the production build locally:
 
 ```bash
-npm run preview
+pnpm preview
 ```
 
 ## Deploy to Cloudflare Workers
@@ -41,14 +41,14 @@ npm run preview
 1. **Log in to Cloudflare** via the Wrangler CLI:
 
    ```bash
-   npx wrangler login
+   pnpm wrangler login
    ```
 
 2. **Build and deploy**:
 
    ```bash
-   npm run build
-   npx wrangler deploy
+   pnpm build
+   pnpm wrangler deploy
    ```
 
    Wrangler reads the configuration from [`wrangler.jsonc`](./wrangler.jsonc) and deploys the worker named `hackernews` to your Cloudflare account.
